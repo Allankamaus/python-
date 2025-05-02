@@ -1,0 +1,77 @@
+# Random Numbers Games
+
+## Overview
+The `game2.py` file contains two exciting random numbers games:
+1. **Guessing Game**: A game where the player guesses a randomly generated number.
+2. **Blackjack**: A simplified version of the classic card game where the goal is to get as close to 21 as possible without going over.
+
+## Games Description
+
+### 1. Guessing Game
+- The computer generates a random number between 1 and 20.
+- The player has to guess the number.
+- Feedback is provided for each guess (too high, too low, or correct).
+- The game tracks the number of attempts taken to guess correctly.
+
+### 2. Blackjack
+- The player is dealt two random cards (numbers between 1 and 11).
+- The player can choose to "hit" (draw another card) or "stand" (keep their current total).
+- The goal is to get as close to 21 as possible without exceeding it.
+- If the player exceeds 21, they "bust" and lose the game.
+- The dealer also plays, and the winner is determined based on who is closer to 21.
+
+## How to Play
+1. Run the `game2.py` file:
+   ```bash
+   python number game/game2.py
+   ```
+2. Choose a game by entering the corresponding number (1 for Guessing Game, 2 for Blackjack).
+3. Follow the on-screen instructions to play the selected game.
+4. After the game ends, you will be asked if you want to play again.
+
+## Example
+### Guessing Game
+```
+Hello! Would you like to play game 1 or 2?
+1. Guessing game
+2. Blackjack
+Your choice (one of the numbers): 1
+Welcome to the number guessing game!
+I'm thinking of a number from 1 to 20.
+Take a guess: 10
+Your guess is too low.
+Take a guess: 15
+Congratulations! You guessed the number in 2 attempts.
+Would you like to play again? (y/n): n
+Thank you for playing! Goodbye!
+```
+
+### Blackjack
+```
+Hello! Would you like to play game 1 or 2?
+1. Guessing game
+2. Blackjack
+Your choice (one of the numbers): 2
+Welcome to blackjack!
+The goal of the game is to get as close to 21 as possible without going over.
+You will be dealt 2 cards and you can choose to hit or stand.
+If you go over 21, you lose.
+
+Your cards are: 7 and 10
+Your total is: 17
+Would you like to hit or stand? (h/s): h
+Your new card is: 3
+Your new total is: 20
+Would you like to hit or stand? (h/s): s
+Your final total is: 20
+Dealer's cards total: 18
+You win!
+Would you like to play again? (y/n): n
+Thank you for playing! Goodbye!
+```
+
+## Contributing
+Contributions are welcome! Feel free to fork the repository and submit a pull request for any enhancements or bug fixes.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
