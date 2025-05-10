@@ -92,6 +92,8 @@ complete_btn.pack()
 tasks = [Task("wake up", time(6, 00),"No"), 
          Task("eat breakfast", time(7, 00),"No")]
 
+display_tasks()
+
 #refresh_listbox()
 
 root.mainloop()
