@@ -19,8 +19,7 @@ class Task:
         return f"{self.name} at {self.time.strftime('%H:%M')} - Done: {self.done}"
 
 
-tasks = [Task("wake up", time(6, 00),"No"), 
-         Task("eat breakfast", time(7, 00),"No")]
+tasks = []
 
 #function to display tasks
 def display_tasks():
@@ -50,21 +49,35 @@ def add_tasks():
     except Exception as e:
         listbox.insert(tk.END, "Invalid time format. Use HH:MM.")
 
-#Function to delete tasks
 def delete_tasks():
     try:
         selected_task_index = listbox.curselection()
         tasks.pop(selected_task_index[0])
         listbox.delete(selected_task_index)
+    except Exception as e:
+        listbox.insert(tk.END, "Select a task to delete.")
+
+#Function to mark a completed task
+def mark_completed():
+    try:
+        selected_task_index = listbox.curselection()
+        task = tasks[selected_task_index[0]]
+        task.done = "Yes"
+        listbox.delete(selected_task_index)
+    except Exception as e:
+        listbox.insert(tk.END, "Select a task to mark as completed.")
 
 
 label_name = tk.Label(root, text="Task Name:")
 label_time = tk.Label(root, text="Time (HH:MM):")
 btn = tk.Button(root, text="Add Task", command=add_tasks)
+delete_btn = tk.Button(root, text = "Delete task", command = delete_tasks)
+complete_btn = tk.Button(root, text = "Mark as Done", command = mark_completed)
 
 
 label = tk.Label(root, text="Enter a task:")
 btn = tk.Button(root, text="Add Task", command=add_tasks)
+
 
 
 listbox.pack()
@@ -73,5 +86,12 @@ name_entry.pack()
 label_time.pack()
 time_entry.pack()
 btn.pack()
+delete_btn.pack()
+complete_btn.pack()
+
+tasks = [Task("wake up", time(6, 00),"No"), 
+         Task("eat breakfast", time(7, 00),"No")]
+
+#refresh_listbox()
 
 root.mainloop()
