@@ -1,0 +1,28 @@
+# Python Learning Projects
+
+This repository houses small Python projects I used to learn the language. Each project focuses on different fundamental concepts and practical applications in Python, including:
+
+- **GUI Applications:** Projects using Tkinter, such as a simple calculator and a to-do list app, to practice building graphical user interfaces.
+- **Basic Algorithms:** Scripts that demonstrate sorting, searching, and other core programming techniques.
+- **File Handling:** Examples of reading from and writing to files in Python.
+- **Object-Oriented Programming:** Projects that use classes and objects to model real-world scenarios.
+- **Date and Time Handling:** Code that works with Python's `datetime` module to manage dates and times.
+
+## How to Run
+
+1. Clone or download this repository to your local machine.
+2. Make sure you have Python 3 installed.
+3. Navigate to the project folder you want to try.
+4. Run the Python script using:
+   ```
+   python filename.py
+   ```
+   (Replace `filename.py` with the script you want to run.)
+
+## Projects Included
+
+- `calc_GUI.py`: A simple calculator with a graphical interface.
+- `To-Do-list.py`: A basic to-do list application with task management features.
+- Additional scripts demonstrating various Python concepts.
+
+Feel free to explore, modify, and use these projects as learning tools!

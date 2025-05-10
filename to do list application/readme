@@ -1,0 +1,24 @@
+# To-Do List Application
+
+This is a simple To-Do List application built with Python and Tkinter. It allows users to add, display, and manage daily tasks through a graphical user interface.
+
+## Features
+- Add new tasks with a description and time
+- Display all tasks in a list
+- Mark tasks as done (if implemented)
+- Remove or clear tasks (if implemented)
+
+## How to Run
+1. Make sure you have Python 3 installed on your computer.
+2. Open a terminal and navigate to the `to do list application` folder.
+3. Run the application with:
+   ```
+   python To-Do-list.py
+   ```
+
+## Usage
+- Enter the task details in the provided fields.
+- Click the "Add Task" button to add the task to your list.
+- Your tasks will appear in the listbox below.
+
+This project is intended for learning and practicing Python GUI development. Feel free to modify and expand its features!
