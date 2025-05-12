@@ -11,8 +11,8 @@ def clock():
 root = tk.Tk()
 root.title('Clock')
 root.geometry('100x100')
-root.resizable(False,False)
-label = tk.Label()
+root.resizable(True,True)
+label = tk.Label(root, font = ('arial',), background = ('grey'),foreground=('black'))
 
 
 label.pack()
