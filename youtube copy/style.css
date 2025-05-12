@@ -1,0 +1,18 @@
+
+
+
+body{
+    background-color: rgb(27, 27, 27);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-left: 20px;
+}
+
+
+.nav_bar{
+    background-color: transparent;
+    text-align: right;
+    padding-top: 15px;
+    
+
+}
